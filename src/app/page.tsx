@@ -92,6 +92,17 @@ export default function Home() {
 
       {/* Hero */}
       <section id="home" className="hero">
+      <div className="hero-fixed-background">
+        <Image
+          src="/images/DSC_3474.jpg"
+          alt="Lord St. vacation rental in downtown Indianapolis"
+          fill
+          priority
+          className="hero-image"
+          sizes="100vw"
+        />
+      </div>
+
       <div className="hero-overlay" />
 
         <div className="container hero-content">
