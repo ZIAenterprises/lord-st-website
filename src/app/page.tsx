@@ -92,16 +92,7 @@ export default function Home() {
 
       {/* Hero */}
       <section id="home" className="hero">
-        <Image
-          src="/images/DSC_3474.jpg"
-          alt="Lord St. vacation rental in downtown Indianapolis."
-          fill
-          priority
-          className="hero-image"
-          sizes="100vw"
-        />
-
-        <div className="hero-overlay" />
+      <div className="hero-overlay" />
 
         <div className="container hero-content">
           <p className="eyebrow">Downtown Indianapolis</p>
