@@ -88,22 +88,22 @@ export default function Home() {
   return (
     <main>
       {/* Navigation */}
-        <SiteHeader />
+      <SiteHeader />
 
       {/* Hero */}
       <section id="home" className="hero">
-      <div className="hero-fixed-background">
-        <Image
-          src="/images/DSC_3474.jpg"
-          alt="Lord St. vacation rental in downtown Indianapolis"
-          fill
-          priority
-          className="hero-image"
-          sizes="100vw"
-        />
-      </div>
+        <div className="hero-fixed-background">
+          <Image
+            src="/images/hero.jpg"
+            alt="Lord St. vacation rental in downtown Indianapolis"
+            fill
+            priority
+            className="hero-image"
+            sizes="100vw"
+          />
+        </div>
 
-      <div className="hero-overlay" />
+        <div className="hero-overlay" />
 
         <div className="container hero-content">
           <p className="eyebrow">Downtown Indianapolis</p>
@@ -135,14 +135,17 @@ export default function Home() {
             <strong>4</strong>
             <span>Guests</span>
           </div>
+
           <div>
             <strong>2</strong>
             <span>Bedrooms</span>
           </div>
+
           <div>
             <strong>2</strong>
             <span>Beds</span>
           </div>
+
           <div>
             <strong>1.5</strong>
             <span>Bathrooms</span>
@@ -200,7 +203,9 @@ export default function Home() {
         <div className="container">
           <div className="section-heading centered">
             <p className="eyebrow dark">Inside the home</p>
+
             <h2>Comfort in every room</h2>
+
             <p>
               Thoughtful details, inviting spaces, and everything you need to
               feel at home during your Indianapolis stay.
@@ -241,6 +246,7 @@ export default function Home() {
 
           <div className="amenities-content">
             <p className="eyebrow">Everything you need</p>
+
             <h2>Designed for an easy, comfortable stay</h2>
 
             <p>
@@ -255,10 +261,38 @@ export default function Home() {
                   <span className="checkmark" aria-hidden="true">
                     ✓
                   </span>
+
                   <span>{amenity}</span>
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Backyard */}
+      <section className="section backyard-section">
+        <div className="container backyard-layout">
+          <div className="backyard-photo">
+            <Image
+              src="/images/backyard.jpg"
+              alt="Private backyard at Lord St."
+              fill
+              className="cover-image"
+              sizes="(max-width: 900px) 100vw, 55vw"
+            />
+          </div>
+
+          <div className="backyard-content">
+            <p className="eyebrow dark">Private outdoor space</p>
+
+            <h2>A quiet place to unwind</h2>
+
+            <p>
+              Enjoy a private backyard with room to relax after a day exploring
+              Indianapolis. It is a great spot for morning coffee, an evening
+              drink, or simply getting some fresh air between plans.
+            </p>
           </div>
         </div>
       </section>
@@ -268,7 +302,9 @@ export default function Home() {
         <div className="container">
           <div className="section-heading centered">
             <p className="eyebrow dark">Explore Indianapolis</p>
+
             <h2>Close to the places you came to see</h2>
+
             <p>
               Enjoy easy access to Fountain Square, downtown Indianapolis,
               restaurants, breweries, sporting events, concerts, and
@@ -279,7 +315,9 @@ export default function Home() {
           <div className="location-cards">
             <div className="location-card">
               <span className="location-number">01</span>
+
               <h3>Downtown Events</h3>
+
               <p>
                 Convenient access to Gainbridge Fieldhouse, Lucas Oil Stadium,
                 the Convention Center, and downtown entertainment.
@@ -288,7 +326,9 @@ export default function Home() {
 
             <div className="location-card">
               <span className="location-number">02</span>
+
               <h3>Food &amp; Drinks</h3>
+
               <p>
                 Walk or take a short ride to popular restaurants, coffee shops,
                 cocktail bars, and local Indianapolis breweries.
@@ -297,7 +337,9 @@ export default function Home() {
 
             <div className="location-card">
               <span className="location-number">03</span>
+
               <h3>Fountain Square</h3>
+
               <p>
                 Explore one of the city&apos;s most vibrant neighborhoods,
                 known for dining, nightlife, art, music, and local character.
@@ -317,7 +359,9 @@ export default function Home() {
         <div className="container">
           <div className="section-heading centered light-heading">
             <p className="eyebrow">Guest experiences</p>
+
             <h2>Guests feel at home here</h2>
+
             <p>
               Selected reviews from guests who booked Lord St. through Airbnb
               and Vrbo.
@@ -326,11 +370,11 @@ export default function Home() {
 
           <div className="reviews-grid">
             {reviews.map((review) => (
-              <article className="review-card" key={`${review.name}-${review.stay}`}>
-                <div
-                  className="stars"
-                  aria-label="Five out of five stars"
-                >
+              <article
+                className="review-card"
+                key={`${review.name}-${review.stay}`}
+              >
+                <div className="stars" aria-label="Five out of five stars">
                   ★★★★★
                 </div>
 
@@ -358,6 +402,7 @@ export default function Home() {
         <div className="container booking-layout">
           <div>
             <p className="eyebrow dark">Plan your stay</p>
+
             <h2>Ready to experience Lord St.?</h2>
 
             <p className="booking-description">
@@ -408,19 +453,23 @@ export default function Home() {
       </section>
 
       {/* Direct booking request */}
-      <section id="direct-booking" className="section direct-booking-section">
+      <section
+        id="direct-booking"
+        className="section direct-booking-section"
+      >
         <div className="container">
           <div className="direct-booking-intro">
             <div>
               <p className="eyebrow dark">Returning guests</p>
+
               <h2>Request a direct stay</h2>
             </div>
 
             <div>
               <p>
-                Returning guests and guests referred by someone we know may request
-                to book directly. Every request is personally reviewed before dates
-                and pricing are confirmed.
+                Returning guests and guests referred by someone we know may
+                request to book directly. Every request is personally reviewed
+                before dates and pricing are confirmed.
               </p>
 
               <p className="direct-booking-notice">
@@ -440,6 +489,7 @@ export default function Home() {
             <a href="#home" className="footer-logo">
               Lord St.
             </a>
+
             <p>A historic downtown Indianapolis stay.</p>
           </div>
 
@@ -471,7 +521,9 @@ export default function Home() {
         </div>
 
         <div className="container footer-bottom">
-          <p>© {new Date().getFullYear()} ZIA Residential. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} ZIA Residential. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>

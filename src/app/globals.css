@@ -684,6 +684,55 @@ h3 {
   font-size: 0.7rem;
 }
 
+
+/* Backyard section */
+
+.backyard-section {
+  background: var(--surface);
+}
+
+.backyard-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.backyard-photo {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.backyard-content {
+  max-width: 500px;
+}
+
+.backyard-content p:last-child {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 960px) {
+  .backyard-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .backyard-photo {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .backyard-photo {
+    min-height: 380px;
+  }
+}
+
+
+
 /* Location */
 
 .location-section {
