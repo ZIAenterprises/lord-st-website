@@ -39,11 +39,12 @@ main {
 
 .intro-section,
 .gallery-section,
+.amenities-section,
+.backyard-section,
 .location-section,
+.reviews-section,
 .booking-section,
 .direct-booking-section,
-.reviews-section,
-.amenities-section,
 .site-footer {
   position: relative;
   z-index: 2;
