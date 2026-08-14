@@ -442,8 +442,8 @@ export default function Home() {
 
           <div className="booking-photo">
             <Image
-              src="/images/DSC_3425.jpg"
-              alt="Comfortable king bedroom at Lord St."
+              src="/images/DSC_3479.jpg"
+              alt="comfortable living and dining room at Lord St."
               fill
               className="cover-image"
               sizes="(max-width: 900px) 100vw, 50vw"
